@@ -1,79 +1,208 @@
+/* #region Base Styles */
 body {
-  font-family: "Asap", sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
   background-color: #16181d;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
   color: #c0c4ce;
-  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }
 
 ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
+/* text-sm */
+.sm {
+  font-size: 14px;
 }
 
-.hero-section {
+/* text-md */
+.md {
+  font-size: 16px;
+}
+/* #endregion */
+
+/* #region Hero Section */
+.hero {
   background-image: url(../media/images/Background_Intro.jpg);
   background-size: cover;
 }
 
-.hero-photo {
+.photo-border {
+  position: fixed;
+  margin: 0 auto;
+  width: 96px;
+  height: 96px;
+  border: 3px solid #e3646e;
+  border-radius: 9999px;
 }
 
-.section-title {
+.hero-photo {
+  border-radius: 9999px;
+  width: 87px;
+  height: 87px;
+}
+
+.code-logo {
+}
+
+.hero-subtitle,
+.works-subtitle,
+.services-subtitle,
+.contacts-subtitle {
   font-family: "Inconsolata", sans-serif;
   font-size: 20px;
   line-height: 1.2;
   color: #e3646e;
 }
 
-.section-title > span {
+.hero-subtitle > span {
   color: #c0c4ce;
 }
 
-.hero-title {
-  font-size: 56px;
+.hero-title,
+.works-title,
+.services-title,
+.contacts-title {
+  font-family: "Asap", sans-serif;
   font-weight: 700;
+  font-size: 56px;
+  line-height: 1.2;
+  text-transform: capitalize;
   color: #e2e4e9;
 }
 
-.text-sm {
-  font-family: "Maven Pro", sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
+.hero-text {
   color: #878ea1;
 }
-.text-md {
-  font-family: "Maven Pro", sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
+
+.languages-list {
 }
 
-.section-subtitle {
+.language-item {
+  background-color: #292c34;
+  width: 114px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.language-img {
+}
+
+.language-text {
+  color: #c0c4ce;
+}
+
+/* #endregion */
+
+/* #region Works Section */
+.works {
+}
+
+.works-subtitle {
+  /* In Hero Section */
+}
+
+.works-title,
+.services-title,
+.contacts-title {
   font-size: 24px;
-  line-height: 1.2;
+  text-transform: none;
+}
+
+.works-list {
+}
+
+.work-item {
+  background-color: #292c34;
+}
+
+.work-img {
+}
+
+.work-subtitle,
+.service-subtitle {
+  font-family: "Asap", sans-serif;
   font-weight: 700;
-  color: #e2e4e9;
-}
-.my-works {
-}
-.work-title {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
+  color: #e2e4e9;
+  text-align: left;
 }
-.my-services {
+
+.work-text,
+.service-text {
+  text-align: left;
+}
+/* #endregion */
+
+/* #region Services Section */
+.services {
   background-color: #0d0e11;
 }
+.services-subtitle {
+  /* Inherited */
+}
+
+.services-title {
+  /* Inherited */
+}
+
+.services-list {
+}
+
+.service-item {
+}
+
+.service-img {
+}
+
+.service-subtitle {
+}
+
+.service-text {
+}
+/* #endregion */
+
+/* #region Cotacts Section */
 .contacts {
   background-image: url(../media/images/Background_Contacts.jpg);
   background-size: cover;
 }
-.contact-item {
-  font-family: "Maven Pro", sans-serif;
-  font-weight: 500;
-  line-height: 1.4;
+
+.contacts-subtitle {
+  color: #bb72e9;
 }
+
+.contacts-title {
+}
+
+.contacts-text {
+}
+
+.socials {
+}
+
+.socail-item {
+  background-color: #292c34;
+}
+
+.social-img {
+}
+
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* #endregion */
